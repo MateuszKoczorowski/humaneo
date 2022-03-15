@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Zadanie nr 16</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Co zawiera strona">
+    <meta name="keywords" content="Słowa kluczowe dla wyszukiwarek">
+    <meta name="author" content="Paweł Lalewicz">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<!-- Header -->
+<header>
+    <h1 id="head">Szablon HTML5</h1>
+    <p id="big">Zadanie nr 16</p>
+    <img src="logo1.png" width="5%">
+    <img src="logo2.png" width="5%">
+</header>
+<!-- Navigation Bar -->
+<nav>
+    <a class="active" href="index.html">Start</a>
+</nav>
+<!-- The flexible grid (content) -->
+<div class="row">
+    <main>
+        <h2>Przykład działania znaczika MAP i AREA</h2>
+        <img src="work.jpg" alt="Zdjęcie" usemap="#workmap">
+        <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" alt="Computer" href="com.html">
+            <area shape="rect" coords="290,172,333,250" alt="Phone" href="tel.html">
+            <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="cof.html">
+        </map>
+        <img src="1.jpg" alt="Zdjęcie2" usemap="#workmap2">
+        <map name="workmap2">
+            <area shape="rect" coords="200,150,280,250" alt="WP" href="https://wp.pl" target="_blank">
+        </map>
+    </main>
+</div>
+<!-- Footer -->
+<footer>
+    <h2>Stopka mojej strony</h2>
+</footer>
+
+</body>
+</html>

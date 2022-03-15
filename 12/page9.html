@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Zadanie nr 12</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Co zawiera strona">
+    <meta name="keywords" content="Słowa kluczowe dla wyszukiwarek">
+    <meta name="author" content="Paweł Lalewicz">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Rubik+Beastly&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+        @font-face
+        {
+            font-family: 'Space Mono';
+            src: url("Space_Mono/SpaceMono-Regular.ttf");
+        }
+        .p1{
+            font-family: 'Rubik Beastly', cursive;
+        }
+        .p2{
+            font-family: 'Lobster', cursive;
+        }
+        .p3{
+            font-family: 'Pacifico', cursive;
+        }
+        .p4{
+            font-family: 'Permanent Marker', cursive;
+        }
+        .p5{
+            font-family: 'Neonderthaw', cursive;
+        }
+        .p6{
+            font-family:'Space Mono';
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Strona z demonstracją właściwości CSS3</h1>
+    <h2>Zadanie nr 12</h2>
+</header>
+<nav id="myLinks">
+    <a href="index.html">Home</a>
+    <a href="page2.html">Tło</a>
+    <a href="page3.html">HLSA</a>
+    <a href="page4.html">RGBA</a>
+    <a href="page5.html">HEX</a>
+    <a href="page6.html">OPACITY</a>
+    <a href="page7.html">POSITION</a>
+    <a href="page8.html">Z-INDEX</a>
+    <a class="active" href="page9.html">@IMPORT</a>
+</nav>
+<div class="button">
+    <button id="menu" onclick="myFunction()">&#9776;</button>
+</div>
+        <main>
+            <h2>Demonstarcja właściwości @import</h2>
+            <p class="p1">To jest czcionka typu Rubik Beastly</p>
+            <p class="p2">To jest czcionka typu Lobster</p>
+            <p class="p3">To jest czcionka typu Pacifico</p>
+            <p class="p4">To jest czcionka typu Permanent Marker</p>
+            <p class="p5">To jest czcionka typu Neonderthaw</p>
+            <hr>
+            <p class="p6">To jest czcionka lokalna typu Space Mono</p>
+        </main>
+<footer>
+    <h2>PL &copy; 2022</h2>
+</footer>
+<script>
+    function myFunction() {
+        document.getElementById("myLinks").style.display = "flex";
+        document.getElementById("menu").style.display = "none";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial;
+    margin: 0;
+    background-color: rgba(255, 250, 205, 0.4); /* kolor tła */
+  }
+  p{
+    text-align: justify;
+  }
+  header {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    background: #313131;
+    color: rgb(255, 2, 2);
+  }
+  #head {
+      font-size: 3em;
+  }
+  #myLinks {
+    display: flex;
+    overflow: auto;
+    justify-content: center;
+    background-color: rgb(184, 41, 41);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  nav a:hover {
+    background-color: #ebdfadc0;
+    color: black;
+  }
+  a.active {
+    background-color: #ebdfadc0;
+    color: white;
+  }
+  button{
+    display: none;
+  }
+  .row {  
+    display: flex; /* wyświetlanie elastyczne elemnetów podżędnych DIV */
+    flex-wrap: wrap; /* zawijanie elementów */
+  }
+  .full{
+    width: 100%; /* szerokośc elementu */
+    padding: 20px; /* margines wewnętrzny */
+  }
+  main {
+    width: 70%; /* szerokośc elementu */
+    padding: 20px; /* margines wewnętrzny */
+  }
+  aside {
+    width: 30%; /* szerokośc elementu */
+    background-color: rgba(255, 228, 196, 0.09); /* kolor tła */
+    padding: 20px; /* margines wewnętrzny */
+    color: rgb(184, 41, 41); /* kolor tekstu */
+  }
+  main h2{
+    width: 100%;
+  }
+  footer {
+    padding: 20px;
+    text-align: center;
+    background: rgb(184, 41, 41);
+    color: seashell;
+  }
+  
+  @media (max-width: 900px) {
+    .row, nav {   
+      flex-direction: column; /* wyświetlanie w kolumnach elemnetów podżędnych */
+    }
+    main, aside{
+      width: auto; /* szerokośc automatyczna */
+    }
+    .button{
+      display: flex;
+      justify-content: center;
+      background-color: rgb(184, 41, 41);
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+    }
+    button{
+      border: none;
+      color: white;
+      background-color: rgb(184, 41, 41);
+      padding: 5px;
+      text-align: center;
+      display: block;
+      cursor: pointer;
+      font-size: xx-large;
+    }
+    #myLinks{
+      display: none;
+    }
+  }

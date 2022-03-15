@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Zadanie nr 11</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Co zawiera strona">
+    <meta name="keywords" content="Słowa kluczowe dla wyszukiwarek">
+    <meta name="author" content="Paweł Lalewicz">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<header>
+    <h1>Strona z demonstracją formularzy HTML5</h1>
+    <h2>Zadanie nr 11</h2>
+</header>
+<nav id="myLinks">
+    <a class="active" href="index.html">Input</a>
+    <a href="form1.html">Form 1</a>
+    <a href="form2.html">Form 2</a>
+    <a href="form3.html">Form 3</a>
+    <a href="form4.html">Form 4</a>
+    <a href="form5.html">Form 5</a>
+    <a href="form6.html">Form 6</a>
+</nav>
+<div class="button">
+    <button id="menu" onclick="myFunction()">&#9776;</button>
+</div>
+        <main>
+            <h2>Znaczniki formularzy HTML5</h2>
+            <p>&lt;INPUT&gt; - główny znacznik formularzy</p>
+            <p>&lt;LABEL&gt; - opis dla znacznika INPUT</p>
+            <p>&lt;FORM&gt; - znacznik formularza</p>
+            <p>&lt;FIELDSET&gt; - obszar</p>
+            <p>&lt;LEGEND&gt; - opis dla znacznika FIELDSET</p>
+            <h2>Demonstracja znacznika &lt;INPUT&gt;</h2>
+            <p><label>input text <input type="text"></label></p>
+            <p><label>input password <input type="password"></label></p>
+            <p><label>input button <input type="button"></label></p>
+            <p><label>input radio <input type="radio"></label></p>
+            <p><label>input color <input type="color"></label></p>
+            <p><label>input date <input type="date"></label></p>
+            <p><label>input datetime <input type="datetime"></label></p>
+            <p><label>input file <input type="file"></label></p>
+            <p><label>input range <input type="range"></label></p>
+            <p><label>input time <input type="time"></label></p>
+            <p><label>input url <input type="url"></label></p>
+            <p>radio:<p>
+                <label><input type="radio" name="food" checked> Frytki</label>
+                <label><input type="radio" name="food"> Ziemniaki</label>
+                <label><input type="radio" name="food"> Ryż</label>
+            <p>checkbox:<p>
+                <label><input type="checkbox"> Potwierdzam zapoznanie się z Regulaminem</label>
+            <p>textarea:</p>
+                <p><textarea cols="30" rows="10">Jakiś tekst ...</textarea></p>
+            <p>select:</p>
+                <select>
+                    <option checked>Opcja 1</option>
+                    <option>Opcja 2</option>
+                    <option>Opcja 3</option>
+                </select>
+            <p>fieldset i legend</p>
+                <fieldset>
+                    <legend>Dane personalne</legend>
+                    <label>Imię <input type="text"></label>
+                    <label>Nazwisko <input type="text"></label>
+                </fieldset>
+            <p>submit</p>
+                <form>
+                    <fieldset>
+                        <legend>Dane osobowe</legend>
+                        <label>Twój Login <input type="text"></label>
+                        <label>Twój email <input type="email"></label>
+                        <label>Twoje hasło <input type="password"></label>
+                        <input type="submit" value="WYŚLIJ">
+                    </fieldset>
+               </form>
+
+        </main>
+<footer>
+    <h2>PL &copy; 2022</h2>
+</footer>
+<script>
+    function myFunction() {
+        document.getElementById("myLinks").style.display = "flex";
+        document.getElementById("menu").style.display = "none";
+    }
+</script>
+</body>
+</html>

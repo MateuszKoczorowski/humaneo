@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Zadanie nr 12</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Co zawiera strona">
+    <meta name="keywords" content="Słowa kluczowe dla wyszukiwarek">
+    <meta name="author" content="Paweł Lalewicz">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        .z1{
+            z-index: 1;
+            width: 300px;
+            position: absolute;
+            top: 420px;
+            left: 270px;
+        }
+        .z2{
+            z-index: 0;
+            width: 300px;
+            position: absolute;
+            top: 380px;
+            left: 500px;
+        }
+        .z3{
+            z-index: -1;
+            width: 300px;
+            position: absolute;
+            top: 500px;
+            left: 420px;
+
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Strona z demonstracją właściwości CSS3</h1>
+    <h2>Zadanie nr 12</h2>
+</header>
+<nav id="myLinks">
+    <a href="index.html">Home</a>
+    <a href="page2.html">Tło</a>
+    <a href="page3.html">HLSA</a>
+    <a href="page4.html">RGBA</a>
+    <a href="page5.html">HEX</a>
+    <a href="page6.html">OPACITY</a>
+    <a href="page7.html">POSITION</a>
+    <a class="active" href="page8.html">Z-INDEX</a>
+    <a href="page9.html">@IMPORT</a>
+</nav>
+<div class="button">
+    <button id="menu" onclick="myFunction()">&#9776;</button>
+</div>
+        <main>
+            <h2>Demonstarcja właściwości Z-INDEX</h2>
+            <img class="z1" src="foto/windows7.jpg" alt="obrazek pulpitu">
+            <img class="z2" src="foto/1.jpg" alt="obrazek pulpitu">
+            <img class="z3" src="foto/3.jpeg" alt="obrazek pulpitu">
+        </main>
+<footer>
+    <h2>PL &copy; 2022</h2>
+</footer>
+<script>
+    function myFunction() {
+        document.getElementById("myLinks").style.display = "flex";
+        document.getElementById("menu").style.display = "none";
+    }
+</script>
+</body>
+</html>

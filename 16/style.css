@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the body */
+  body {
+    font-family: Arial;
+    margin: 0;
+  }
+  
+  /* Header/logo Title */
+  header {
+    padding: 20px;
+    text-align: center;
+    background: #ebdfad;
+    color: rgb(255, 2, 2);
+  }
+  
+  #head {
+      font-size: 3em;
+  }
+  /* Style the top navigation bar */
+  
+  #big {
+      font-size: 2em;
+      font-style: italic;
+  }
+
+  nav {
+    display: flex;
+    background-color: rgb(184, 41, 41);
+  }
+  
+  /* Style the navigation bar links */
+  nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  /* Change color on hover */
+  nav a:hover {
+    background-color: #ebdfadc0;
+    color: black;
+  }
+  
+  /* Column container */
+  .row {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  aside {
+    flex: 35%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  /* Main column */
+  main {
+    flex: 65%;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 1px;
+    text-align: center;
+    background: rgb(184, 41, 41);
+    color: seashell;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  a.active {
+    background-color: #ebdfadc0;
+    color: white;
+  }
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 700px) {
+    .row, nav {   
+      flex-direction: column;
+    }
+
+    #head{
+        font-size: 2em;
+    }
+
+    #big {
+        font-size: 1em;
+        font-style: italic;
+    }
+
+    header img{
+        display: none;
+    }
+
+    footer {
+      position: fixed;
+    }
+  }

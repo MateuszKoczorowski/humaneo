@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Zadanie nr 11</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Co zawiera strona">
+    <meta name="keywords" content="Słowa kluczowe dla wyszukiwarek">
+    <meta name="author" content="Paweł Lalewicz">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<header>
+    <h1>Strona z demonstracją formularzy HTML5</h1>
+    <h2>Zadanie nr 11</h2>
+</header>
+<nav id="myLinks">
+    <a href="index.html">Input</a>
+    <a href="form1.html">Form 1</a>
+    <a href="form2.html">Form 2</a>
+    <a href="form3.html">Form 3</a>
+    <a href="form4.html">Form 4</a>
+    <a class="active" href="form5.html">Form 5</a>
+    <a href="form6.html">Form 6</a>
+</nav>
+<div class="button">
+    <button id="menu" onclick="myFunction()">&#9776;</button>
+</div>
+        <main>
+            <h2>Demonstracja formularza aplikacyjnego do pracy</h2>
+            <form action='/11/success' data-netlify-recaptcha='true' enctype='multipart/form-data' method='post' name='test5'><input type='hidden' name='form-name' value='test5' />
+                <fieldset>
+                    <legend>Formularz aplikacyjny</legend>
+                        <p>Imię: <input type="text" name="imie" required></p>
+                        <p>Nazwisko: <input type="text" name="nazwisko" required></p>
+                        <p>Wiek: <input type="number" name="wiek" required></p>
+                        <p>Email: <input type="email" name="email" required></p>
+                        <p>Tel: <input type="tel" name="tel" required></p>
+                        <p>Dlaczego aplikujesz na to stanowisko? <br><textarea rows="5" name="wiadomość" cols="50" required></textarea></p>
+                        <p>Dodaj załącznik (CV): <input type="file" name="cv" required></p>
+                        <p><label><input type="checkbox" name="regulamin" required> Zapoznałem się z regulaminem rekrutacji</label></p>
+                        <div><script src='https://www.google.com/recaptcha/api.js'></script>
+<div class='g-recaptcha' data-sitekey='6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9'></div>
+<noscript>
+  <div>
+  <div style="width: 302px; height: 422px; position: relative;">
+  <div style="width: 302px; height: 422px; position: absolute;">
+  <iframe src="https://www.google.com/recaptcha/api/fallback?k=6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9" frameborder="0" scrolling="no"
+    style="width: 302px; height:422px; border-style: none;">
+  </iframe>
+  </div>
+  </div>
+  <div style="width: 300px; height: 60px; border-style: none; bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px; background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
+    <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
+      style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;" >
+    </textarea>
+  </div>
+  </div>
+</noscript>
+</div>
+                        <p><input type="submit" name="submit" value="WYŚLIJ"></p>
+                </fieldset>
+            </form>
+        </main>
+<footer>
+    <h2>PL &copy; 2022</h2>
+</footer>
+<script>
+    function myFunction() {
+        document.getElementById("myLinks").style.display = "flex";
+        document.getElementById("menu").style.display = "none";
+    }
+</script>
+</body>
+</html>

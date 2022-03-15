@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Zadanie nr 17</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="słowa kluczowe">
+        <meta name="decription" content="Opis strony">
+        <meta name="author" content="imię i nazwisko">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Poligon JavaScript - ZAD 17</h1>
+        </header>
+        <nav>
+            <a href="index.html">Start</a>
+            <a href="calc1.html">Kalkulator 1</a>
+            <a class="active" href="calc2.html">Kalkulator 2</a>
+            <a href="foto.html">Galeria</a>
+        </nav>
+        <div>
+            <main>
+                <section>
+                    <h2>PRZYKŁADOWE SKRYPTY JS</h2>
+                    <article>
+                        <h3>KALKULATOR ZAAWANSOWANY</h3>
+                        <h4>OPERACJE</h4>
+                        <label></label><input type="radio" name="dzialanie" value="+" checked>DODAWANIE</label><br>
+                        <label></label><input type="radio" name="dzialanie" value="-">ODEJMOWANIE</label><br>
+                        <label></label><input type="radio" name="dzialanie" value="*">MNOŻENIE</label><br>
+                        <label></label><input type="radio" name="dzialanie" value="/">DZIELENIE</label><br>
+                        <label></label><input type="radio" name="dzialanie" value="**">POTĘGOWANIE</label><br>
+                        <input type="number" id="a">
+                        <input type="number" id="b">
+                        <button onclick="operacja()">=</button>
+                        <b><span id="wynik"></span></b>
+                        <hr>
+                        <button onclick="drukuj()">DRUKUJ</button>
+                    </article>
+                </section>
+            </main>
+        <footer>
+            <h2>Stopka &copy; 2022</h2>
+        </footer>
+    </body>
+</html>

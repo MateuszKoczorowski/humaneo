@@ -1,0 +1,93 @@
+/* zewnętrzny plik ze stylami CSS */
+* {
+    box-sizing: border-box; /* ujmuje margin, border i padding jako część szerokości i wysokości elementu*/
+  }
+body{ /* selektor BODY */
+    font-family: Arial, Helvetica, sans-serif; /* definiowanie właściwości typu czciconki */
+    margin: 10px; /* margines całego BODY */
+    padding: 10px; /* margines wewnętrzny całego BODY */
+}
+header{ /* selektor HEADER */
+    text-align: center; /* wyśrodkowanie tekstu */
+    background-color: rgba(49, 49, 49); /* kolor tła */
+    padding: 20px; /* margines wewnętrzny */
+    border-radius: 15px; /* stopień zaokrąglenia narożników pudełka */
+}
+nav{ /* selektor NAV */
+    text-align: center; /* wyśrodkowanie tekstu */
+    background-color: rgba(100, 172, 52); /* kolor tła */
+    margin-top: 20px; /* margines górny */
+    padding: 10px; /* margines wewnętrzny */
+    border-radius: 15px; /* stopień zaokrąglenia narożników pudełka */
+}
+.row{
+    display: flex; /* wyświetlanie elastyczne elemnetów podżędnych znacznika DIV */
+    flex-wrap: wrap; /* zawijanie elementów */
+    justify-content: space-between; /* wyśrodkowanie elementów */
+}
+main{
+    width: 69%; /* szerokość pudełka */
+    margin-top: 20px; /* margines górny */
+    margin-bottom: 20px; /* margines dolny */
+    border-radius: 15px; /* stopień zaokrąglenia narożników pudełka */
+    padding: 10px; /* margines wewnętrzny */
+}
+aside{
+    width: 29%; /* szerokość pudełka */
+    padding: 10px; /* margines wewnętrzny */
+    margin-top: 20px; /* margines górny */
+    margin-bottom: 20px; /* margines dolny */
+    border-radius: 15px; /* stopień zaokrąglenia narożników pudełka */
+}
+.start{
+    width: 100%; /* szerokość pudełka */
+    display: flex; /* wyświetlanie elastyczne elemnetów podżędnych znacznika DIV */
+    justify-content: center; /* wyśrodkowanie elementów */
+}
+
+#index{
+    width: 100% !important; /* szerokość pudełka */
+    padding-bottom: 20px; /* margines wewnętrzny dolny */
+    text-align: center; /* wyśrodkowanie tekstu */
+    font-size: xx-large; /* rozmiar tekstu */
+    background-image: url("pizza4.jpg"); /* obraz tła */
+    background-repeat: no-repeat; /* powtarzanie tła */
+    background-size: cover; /* rozmiar obrazu tła */
+    color: red; /* kolor tekstu */
+    font-weight: bold; /* styl tekstu */
+}
+
+li{
+    font-family: fantasy; /* typ czcionki */
+    margin-bottom: 25px; /* margines dolny */
+}
+footer{ /* selektor FOOTER */
+    text-align: center; /* wyśrodkowanie tekstu */
+    background-color: rgba(100, 172, 52); /* kolor tła */
+    padding: 5px; /* margines wewnętrzny */
+    border-radius: 15px; /* stopień zaokrąglenia narożników pudełka */
+}
+
+a{ /* selektor A */
+    text-decoration: none; /* dekoracja tekstu */
+    color:black; /* kolor tekstu */
+    font-weight: bold; /* pogrubienie czcionki */
+}
+a:hover{ /* selektor pseudoklasy A*/
+    color:red; /* kolor tekstu */
+    cursor:pointer; /* typ kursora */
+}
+a:active{ /* selektor pseudoklasy A*/
+    color: green; /* kolor tekstu */
+}
+@media (max-width: 1100px) { /* deklaracja dyrektywy @media dla wyświetlaczy o szerokości 900px i mniej */
+    main, aside{
+        width: 100%; /* szerokość pudełka */
+    }
+    aside{
+        margin-top: 0; /* zniesienie marginesu górnego */
+    }
+    header img{
+        width: 50%; /* szerokość obrazu */
+    }
+}

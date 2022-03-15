@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Zadanie nr 15</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Co zawiera strona">
+    <meta name="keywords" content="Słowa kluczowe dla wyszukiwarek">
+    <meta name="author" content="Paweł Lalewicz">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+<header>
+    <h1>Galerie CSS i JS</h1>
+    <h2>demo</h2>
+</header>
+<nav id="myLinks">
+    <a class="active" href="index.html">Start</a>
+    <a href="gal1.html">Galeria CSS</a>
+    <a href="gal2.html">Galeria JS</a>
+</nav>
+<div class="button">
+    <button id="menu" onclick="myFunction()">&#9776;</button>
+</div>
+<!-- The flexible grid (content) -->
+<div class="row">
+    <main>
+        <section>
+            <!-- tytuł -->
+            <h2>Galeria obrazów</h2>
+            <article>
+                <h3>Lightbox JS</h3>
+                <!-- content -->
+                <p>Lightbox to biblioteka JavaScript, która wyświetla obrazy i filmy, wypełniając ekran i przyciemniając resztę strony internetowej.</p>
+                <p>Oryginalna biblioteka JavaScript została napisana przez Lokesha Dhakara. Termin Lightbox może również odnosić się do innych podobnych bibliotek JavaScript. Technika zyskała powszechną popularność dzięki prostemu i eleganckiemu stylowi.</p>
+                <p> Oryginalna biblioteka Lightbox używała dwóch bibliotek JavaScript, Prototype Javascript Framework i script.aculo.us do animacji i pozycjonowania. W kwietniu 2012 wtyczka została przepisana z wykorzystaniem jQuery.</p> 
+                <p>Otwarty charakter Lightbox zachęcił programistów do modyfikacji i rozwidlenia kodu, co zaowocowało wtyczkami takimi jak Colorbox, Magnific Popup, Slimbox lub Thickbox.</p>
+                <p>Skrypty lightbox są zależne od obsługi JavaScript w przeglądarce. Przeglądarki, które nie ładują skryptu z jakiegokolwiek powodu, mogą zamiast tego po prostu załadować obraz jako osobną stronę, tracąc efekt Lightbox, ale nadal zachowując możliwość wyświetlania obrazu.</p>
+            </article>
+            <article>
+                <h3>Galeria CSS</h3>
+                <!-- content -->
+                <p>Galeria CSS to proste rozwiązanie skomplikowanego problemu. Stosując wyłącznie właściwości CSS tworzy sie złudzenie galerii typu lightbox.</p>
+                <p>Oczywiście nie ma tu możliwości oprogramowania przycisków strujących.</p>
+            </article>
+        </section>
+    </main>
+<aside>
+    <article>
+        <h3>Logo lightbox-a</h3>
+        <img src="obrazy/Lightbox-Logo.png" alt="obraz" width="100%">
+    </article>
+</aside>
+</div>
+<script>
+    function myFunction() {
+        document.getElementById("myLinks").style.display = "flex";
+        document.getElementById("menu").style.display = "none";
+    }
+</script>
+</body>
+</html>

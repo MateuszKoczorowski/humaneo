@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Zadanie nr 18</title>
+        <meta charset="UTF-8">
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="keywords" content="słowa kluczowe">
+        <meta name="decription" content="Opis strony">
+        <meta name="author" content="imię i nazwisko">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>Poligon JavaScript - ZAD 18</h1>
+        </header>
+        <nav id="myLinks">
+            <a class="active" href="index.html">Polecenia</a>
+            <a href="pod.html">Podpowiedzi</a>
+            <a href="#">Rozwiązania</a>
+        </nav>
+        <div class="button">
+            <button id="menu" onclick="myFunction()">&#9776;</button>
+        </div>
+        <div>
+            <main>
+                <section>
+                    <h2>ĆWICZENIA DO SAMODZIELNEJ REALIZACJI</h2>
+                    <article>
+                        <h3>Celem tego zadania jest samodzielne stworzenie strony internetowej z podstronami zawierającymi rozwiązania ćwiczeń z akresu JavaScript. Polecenia opublikowane są poniżej. Szablon strony www może być dowolny. Życzę miłej i efektywnej pracy :) </h3>
+                        
+                        <h3>Ćwiczenie 1</h3>
+                        <p>Zdefiniuj zmienną tekst o wartości "Witaj świecie!". Przypisz zmieną do pustego paragrafu P tak żeby pojawiła się na stronie po naciśnięciu przycisku BUTTON. Po wykonaniu kodu JS ukryj przycisk BUTTON.</p>
+                        <button id="buttonParagraf" style="padding:5px 10px; background-color:#cccc; border-radius:5px; ">Clik</button>
+                        <p id="pargarf"></p>
+                        
+                        <hr>
+                        <h3>Ćwiczenie 2</h3>
+                        <p>Pobierz za pomocą instrukcji PROMPT() wartość liczbową i przypisz do paragrafu lub paragrafów P tekst "Pobrana wartość: pobrana liczba". Wykorzystaj odpowiednio oprogramowany przycisk BUTTON, który ukryje się po wykonaniu skryptu JS.</p>
+                        <p id="number"></p>
+                        <button id="btnNumber" style="padding:5px 10px; background-color:#cccc; border-radius:5px;">Numer</button>
+
+                        <hr>
+                        <h3>Ćwiczenie 3</h3>
+                        <p>Napisz kod JS który w znaczniku P wyświetli liczby od 1 do 100 rozdzielone średnikami. Skorzystaj z operatora += by uprościć kod. Po wykonaniu kodu JS ukryj przycisk BUTTON.</p>
+                        <p id="pentla1"></p>
+                        <button id="btnPentla" style="padding:5px 10px; background-color:#cccc; border-radius:5px;">od 1 do 100</button>
+                        
+                        <hr>
+                        <h3>Ćwiczenie 4</h3>
+                        <p>Zdefiniuj zmienną nazwij ją liczba. Jeśli będzie dodatnia w znaczniki P ma się wyświetlić np. tekst: "122 => Liczba większa od zera." napisany czcionką koloru zielonego. Jeśli nie ma się pokazać np. tekst: "-5 => Zero lub liczba ujemna." zapisany czcionka koloru czerwonego. Wykorzystaj odpowiednio oprogramowany przycisk BUTTON oraz okienko PROMPT. Po wykonaniu kodu JS ukryj przycisk BUTTON.</p>
+                        <p id="liczbaJ"></p>
+                        <button id="btnJezeli" style="padding:5px 10px; background-color:#cccc; border-radius:5px;">Jezeli</button>
+                        
+                        
+                        <hr>
+                        <h3>Ćwiczenie 5</h3>
+                        <p>Napisz kod, który dla zdefiniowanej szkolnej oceny (1,2,3,4,5,6) - zmienna ocena - wypisze jej opis słowny np. dostateczny. Informacja ma być wypisana w znaczniku P. Wykorzystaj odpowiednio oprogramowany przycisk BUTTON oraz okienko PROMPT.</p>
+                        <p id="ocena"></p>
+                        <button id="btnOcena" style="padding:5px 10px; background-color:#cccc; border-radius:5px;">ocena</button>
+                        
+                        
+                        <hr>
+                        <h3>Ćwiczenie 6</h3>
+                        <p>Napisz kod, wstawi suwak o zakresie 0 do 10, wartość domyślna 0. Pod suwakiem w znaczniku P ma się wyświetlać aktualnie ustawiona wartość. Po wykonaniu kodu JS ukryj przycisk BUTTON.</p>
+                        
+                        <input id="wartoscSuwaka" type="range" min="0" max="10" value="0">
+                        
+                        <p id="wartosc"></p>
+                        
+                        <hr>
+                        <h3>Ćwiczenie 7</h3>
+                        <p>Napisz kod, który wyświetli trzy przyciski, podpisane jeden, dwa, trzy. Kliknięcie na każdy z nich ma wyświetlić napis, "kliknąłeś na przycisk x".</p>
+                        <button id="1">1</button>
+                        <button id="2">2</button>
+                        <button id="3">3</button>
+                        <p id="wynikBtn"></p>
+
+                        <hr>
+                        <h3>Ćwiczenie 8</h3>
+                        <p>Napisz kod, który wyświetli  1000 przypadkowych liczb całkowitych rozdzielonych przecinkami. Wynik należy zagnieździć w znaczniku P. Liczby mają zawierać się w zakresie od 0 do 100.</p>
+                        <hr>
+                        <h3>Ćwiczenie 9</h3>
+                        <p>Napisz skrypt, który będzie powodował, że naciśnięcie przycisku będzie zmieniało kolor tła na czerwony w czarnym elemencie DIV. Po wykonaniu kodu JS ukryj przycisk BUTTON.</p>
+                        <hr>
+                        <h3>Ćwiczenie 10</h3>
+                        <p>Wstaw 3 suwaki odpowiedzialne za 3 składowe koloru, zmiana położenia ma zmieniać daną składową. Wyświetlane mają być aktualnie wartości R, G i B. Wartości początkowe - 255 - kolor biały.</p>
+                        <hr>
+                </section>
+            </main>
+        <footer>
+            <h2>Stopka &copy; 2022</h2>
+        </footer>
+        <script src="script.js"></script>
+    
+    </body>
+</html>

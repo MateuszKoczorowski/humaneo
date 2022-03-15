@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Zadanie nr 15</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Co zawiera strona">
+    <meta name="keywords" content="Słowa kluczowe dla wyszukiwarek">
+    <meta name="author" content="Paweł Lalewicz">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="css/lightbox.css" rel="stylesheet" type="text/css" />
+    <script src="js/lightbox.js"></script>
+</head>
+<body>
+<header>
+    <h1>Galerie CSS i JS</h1>
+    <h2>demo</h2>
+</header>
+<nav id="myLinks">
+    <a href="index.html">Start</a>
+    <a href="gal1.html">Galeria CSS</a>
+    <a class="active" href="gal2.html">Galeria JS</a>
+</nav>
+<div class="button">
+    <button id="menu" onclick="myFunction()">&#9776;</button>
+</div>
+<!-- The flexible grid (content) -->
+<div class="row">
+    <main class="full">
+        <section>
+            <!-- tytuł -->
+            <h2>Galeria lightbox JS</h2>
+            <article>
+                <h3>demo</h3>
+                    <p>Click the thumbnail below to activate the lightbox</p>
+                    <div>
+                      <a class="example-image-link" href="obrazy/foto1.jpg" data-lightbox="roadtrip" data-title="Obraz nr 1"><img class="example-image" src="obrazy/foto1-mini.jpg" alt=""/></a>
+                      <a class="example-image-link" href="obrazy/foto2.jpg" data-lightbox="roadtrip" data-title="Obraz nr 2"><img class="example-image" src="obrazy/foto2-mini.jpg" alt="" /></a>
+                      <a class="example-image-link" href="obrazy/foto3.jpg" data-lightbox="roadtrip" data-title="Obraz nr 3"><img class="example-image" src="obrazy/foto3-mini.jpg" alt="" /></a>
+                      <a class="example-image-link" href="obrazy/foto1.jpg" data-lightbox="roadtrip" data-title="Obraz nr 1"><img class="example-image" src="obrazy/foto1-mini.jpg" alt=""/></a>
+                      <a class="example-image-link" href="obrazy/foto2.jpg" data-lightbox="roadtrip" data-title="Obraz nr 2"><img class="example-image" src="obrazy/foto2-mini.jpg" alt="" /></a>
+                      <a class="example-image-link" href="obrazy/foto3.jpg" data-lightbox="roadtrip" data-title="Obraz nr 3"><img class="example-image" src="obrazy/foto3-mini.jpg" alt="" /></a>
+                      <a class="example-image-link" href="obrazy/foto1.jpg" data-lightbox="roadtrip" data-title="Obraz nr 1"><img class="example-image" src="obrazy/foto1-mini.jpg" alt=""/></a>
+                      <a class="example-image-link" href="obrazy/foto2.jpg" data-lightbox="roadtrip" data-title="Obraz nr 2"><img class="example-image" src="obrazy/foto2-mini.jpg" alt="" /></a>
+                      <a class="example-image-link" href="obrazy/foto3.jpg" data-lightbox="roadtrip" data-title="Obraz nr 3"><img class="example-image" src="obrazy/foto3-mini.jpg" alt="" /></a>
+                      <a class="example-image-link" href="obrazy/foto1.jpg" data-lightbox="roadtrip" data-title="Obraz nr 1"><img class="example-image" src="obrazy/foto1-mini.jpg" alt=""/></a>
+                      <a class="example-image-link" href="obrazy/foto2.jpg" data-lightbox="roadtrip" data-title="Obraz nr 2"><img class="example-image" src="obrazy/foto2-mini.jpg" alt="" /></a>
+                      <a class="example-image-link" href="obrazy/foto3.jpg" data-lightbox="roadtrip" data-title="Obraz nr 3"><img class="example-image" src="obrazy/foto3-mini.jpg" alt="" /></a>
+                    </div>
+                </article>
+        </section>   
+    </main>
+</div>
+<script>
+    function myFunction() {
+        document.getElementById("myLinks").style.display = "flex";
+        document.getElementById("menu").style.display = "none";
+    }
+</script>
+<script src="js/lightbox-plus-jquery.js"></script>
+</body>
+</html>

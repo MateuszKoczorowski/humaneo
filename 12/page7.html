@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Zadanie nr 12</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Co zawiera strona">
+    <meta name="keywords" content="Słowa kluczowe dla wyszukiwarek">
+    <meta name="author" content="Paweł Lalewicz">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        .fix{
+            position: fixed;
+            height: 100px;
+            top: 25px;
+        }
+        .abs{
+            position: absolute;
+            height: 200px;
+            left: 1200px;
+            top: 600px;
+        }
+        .st{
+            position: static;
+            height: 300px;
+        }
+        .stk{
+            position: sticky;
+            bottom: 74px;
+            background-color: bisque;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Strona z demonstracją właściwości CSS3</h1>
+    <h2>Zadanie nr 12</h2>
+</header>
+<nav id="myLinks">
+    <a href="index.html">Home</a>
+    <a href="page2.html">Tło</a>
+    <a href="page3.html">HLSA</a>
+    <a href="page4.html">RGBA</a>
+    <a href="page5.html">HEX</a>
+    <a href="page6.html">OPACITY</a>
+    <a class="active" href="page7.html">POSITION</a>
+    <a href="page8.html">Z-INDEX</a>
+    <a href="page9.html">@IMPORT</a>
+</nav>
+<div class="button">
+    <button id="menu" onclick="myFunction()">&#9776;</button>
+</div>
+        <main>
+            <h2>Demonstarcja właściwości POSITION - fixed, absolute, sticky, static</h2>
+            <img class="abs" src="foto/windows7.jpg" alt="obrazek pulpitu">
+            <img class="fix" src="foto/windows7.jpg" alt="obrazek pulpitu">
+            <p>
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+                To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. To tekst. 
+            </p>
+            <img class="st" src="foto/windows7.jpg" alt="obrazek pulpitu">
+            <p class="stk">To jest przyklejony paragraf do dołu okna</p>
+        </main>
+<footer>
+    <h2>PL &copy; 2022</h2>
+</footer>
+<script>
+    function myFunction() {
+        document.getElementById("myLinks").style.display = "flex";
+        document.getElementById("menu").style.display = "none";
+    }
+</script>
+</body>
+</html>

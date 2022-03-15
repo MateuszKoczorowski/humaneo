@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    margin: 0;
+  }
+  
+  header {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    background: #313131;
+    color: rgb(255, 2, 2);
+  }
+  
+  #head {
+      font-size: 3em;
+  }
+
+  #myLinks {
+    display: flex;
+    overflow: auto;
+    justify-content: center;
+    background-color: rgb(184, 41, 41);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+
+  nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  nav a:hover {
+    background-color: #ebdfadc0;
+    color: black;
+  }
+
+  a.active {
+    background-color: #ebdfadc0;
+    color: white;
+  }
+
+  button{
+    display: none;
+  }
+
+  main {
+    width: 100%;
+    font-size: large;
+    padding: 70px;
+  }
+
+  main h2{
+    width: 100%;
+  }
+  
+  fieldset{
+    width: 40%;
+  }
+
+  footer {
+    padding: 20px;
+    text-align: center;
+    background: rgb(184, 41, 41);
+    color: seashell;
+  }
+  
+  @media (max-width: 900px) {
+    nav {   
+      flex-direction: column;
+    }
+
+    main{
+      width: 100%;
+      font-size: large;
+      padding: 5px;
+    }
+
+    .button{
+      display: flex;
+      justify-content: center;
+      background-color: rgb(184, 41, 41);
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+    }
+
+    button{
+      border: none;
+      color: white;
+      background-color: rgb(184, 41, 41);
+      padding: 5px;
+      text-align: center;
+      display: block;
+      cursor: pointer;
+      font-size: xx-large;
+    }
+
+    #myLinks{
+      display: none;
+    }
+
+    fieldset{
+      width: 100%;
+    }
+  }

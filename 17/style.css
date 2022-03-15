@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box; /* ujmuje margin, border i padding jako część szerokości i wysokości elementu*/
+  }
+body{
+    background-color: white; /* kolor tła */
+    font-family: Arial, Helvetica, sans-serif; /* deklaracja typ czcionki */
+    margin: 0; /* kasowanie marginesu domyślnego */
+}
+header{
+    display: flex; /* elastyczny układ elementów strony */
+    justify-content: center; /* wyśrodkowanie elemntów w poziomie */
+    color: rgba(250, 9, 9, 0.657); /* kolor czcionki */
+    font-size: xx-large; /* rozmiar czcionki */
+    text-shadow: 4px 4px gray; /* cień tekstu */
+    margin-bottom: 50px; /* margines dolny */
+    padding: 20px; /* margines wewnętrzny */
+}
+header img{
+    margin-right: 30px; /* margines prawy */
+}
+nav{
+    display: flex; /* blokowy układ elementów strony */
+    justify-content: center;
+    margin-bottom: 20px; /* margines dolny */
+}
+nav a{
+    color: dimgray; /* kolor czcionki */
+    text-decoration: none; /* wyłączenie dekoracji tekstu */
+    text-align: center; /* wyśrodkowanie tekstu */
+    font-weight: bold; /* pogrubienie czcionki */
+    padding: 14px 20px; /* margines wewnętrzny */
+    margin-right: 10px; /* margines prawy */
+    font-size: x-large; /* rozmiar czcionki */
+}
+nav a:hover:not(.active){
+    border: 2px solid dimgray; /* obramowanie elementu */
+    box-shadow: 5px 5px gray; /* cień elementu */
+    border-radius: 15px; /* zaokrąglenie obramowania elementu */
+    color: #7A8742; /* kolor czcionki */
+    font-weight: bold; /* pogrubienie czcionki */
+}
+.active{
+    background-color: #7A8742; /* kolor tła */
+    border: 2px solid dimgray; /* obramowanie elementu */
+    box-shadow: 5px 5px gray; /* cień elementu */
+    border-radius: 15px; /* zaokrąglenie obramowania elementu */
+    color: lightgray; /* kolor czcionki */
+    font-weight: bold; /* pogrubienie czcionki */
+}
+div{
+    display: block; /* blokowy układ elementów strony */
+}
+main{
+    border: 5px solid dimgray; /* obramowanie elementu */
+    border-radius: 15px; /* zaokrąglenie obramowania elementu */
+    box-shadow: 15px 15px gray; /* cień elementu */
+    padding: 20px; /* margines wewnętrzny */
+    margin: 20px;
+    text-align: justify; /* wyjustowanie tekstu*/
+    line-height: 1.5; /* interlina wyrażona numerycznie */
+}
+main h2{
+    color: darkgray; /* kolor czcionki */
+    font-size: xx-large; /* rozmiar czcionki */
+    text-shadow: 3px 3px gray; /* cień tekstu */
+}
+footer{
+    font-size: xx-large; /* rozmiar tekstu */
+    text-shadow: 3px 3px grey; /* cień tekstu */
+    color: darkgray;/* kolor czcionki */
+    display: block; /* blokowy układ elementów strony */
+    text-align: center; /* wyśrodkowanie elemntów w poziomie */
+    margin-top: 50px; /* margines górny */
+    margin-left: 20px; /* margines lewy */
+    margin-right: 20px; /* margines prawy */
+}
+@media (max-width: 700px) { /* Dyrektywa RWD dla ekranów mniejszych niż 700px */
+    header{
+        text-align: center; /* wyśrodkowanie tekstu */
+    }
+    nav a{
+        margin-right: 3px; /* margines prawy */
+        font-size:large; /* rozmiar czcionki */
+    }
+    header img{
+        display: none; /* element się nie wyświetla */
+    }
+    aside{
+        display: none; /* element się nie wyświetla */
+    }
+    main{
+        border: none; /* nie wyświetlać */
+        box-shadow: none; /* nie wyświetlać */
+    }
+    main h2{
+        text-align: center; /* wyśrodkowanie tekstu */
+    }
+    main img{
+        display: block; /* wyświetlaj element jako blokowy */
+        float: none; /* opływanie elementu */
+        margin-left: auto; /* margines lewy */ 
+        margin-right: auto; /* margines prawy */
+    }
+}

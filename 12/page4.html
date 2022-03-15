@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Zadanie nr 12</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Co zawiera strona">
+    <meta name="keywords" content="Słowa kluczowe dla wyszukiwarek">
+    <meta name="author" content="Paweł Lalewicz">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+            #styl1 {
+            background-color: rgba(0,200,200,0.05);
+            width: 100px;
+            height: 30px;
+        }
+
+        #styl2 {
+            background-color: rgba(0,200,200,0.1);
+            width: 125px;
+            height: 30px;
+        }
+
+        #styl3 {
+            background-color: rgba(0,200,200,0.2);
+            width: 150px;
+            height: 30px;
+        }
+
+        #styl4 {
+            background-color: rgba(0,200,200,0.3);
+            width: 175px;
+            height: 30px;
+        }
+
+        #styl5 {
+            background-color: rgba(0,200,200,0.4);
+            width: 200px;
+            height: 30px;
+        }
+
+        #styl6 {
+            background-color: rgba(0,200,200,0.5);
+            width: 225px;
+            height: 30px;
+        }
+
+        #styl7 {
+            background-color: rgba(0,200,200,0.6);
+            width: 250px;
+            height: 30px;
+        }
+
+        #styl8 {
+            background-color: rgba(0,200,200,0.7);
+            width: 275px;
+            height: 30px;
+        }
+
+        #styl9 {
+            background-color: rgba(0,200,200,0.8);
+            width: 300px;
+            height: 30px;
+        }
+
+        #styl10 {
+            background-color: rgba(0,200,200,0.9);
+            width: 325px;
+            height: 30px;
+        }
+
+        #styl11 {
+            background-color: rgba(0,200,200,1.0);
+            width: 350px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Strona z demonstracją właściwości CSS3</h1>
+    <h2>Zadanie nr 12</h2>
+</header>
+<nav id="myLinks">
+    <a href="index.html">Home</a>
+    <a href="page2.html">Tło</a>
+    <a href="page3.html">HLSA</a>
+    <a class="active" href="page4.html">RGBA</a>
+    <a href="page5.html">HEX</a>
+    <a href="page6.html">OPACITY</a>
+    <a href="page7.html">POSITION</a>
+    <a href="page8.html">Z-INDEX</a>
+    <a href="page9.html">@IMPORT</a>
+</nav>
+<div class="button">
+    <button id="menu" onclick="myFunction()">&#9776;</button>
+</div>
+        <main>
+            <h2>Demonstarcja kodowania barw RGBA</h2>
+            <h3>Zmiana współczynnika ALPHA</h3>
+            <div id="styl1">0.05</div>
+            <div id="styl2">0.1</div>
+            <div id="styl3">0.2</div>
+            <div id="styl4">0.3</div>
+            <div id="styl5">0.4</div>
+            <div id="styl6">0.5</div>
+            <div id="styl7">0.6</div>
+            <div id="styl8">0.7</div>
+            <div id="styl9">0.8</div>
+            <div id="styl10">0.9</div>
+            <div id="styl11">1.0</div>
+        </main>
+<footer>
+    <h2>PL &copy; 2022</h2>
+</footer>
+<script>
+    function myFunction() {
+        document.getElementById("myLinks").style.display = "flex";
+        document.getElementById("menu").style.display = "none";
+    }
+</script>
+</body>
+</html>

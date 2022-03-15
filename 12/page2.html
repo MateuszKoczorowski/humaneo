@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Zadanie nr 12</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Co zawiera strona">
+    <meta name="keywords" content="Słowa kluczowe dla wyszukiwarek">
+    <meta name="author" content="Paweł Lalewicz">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        #kontener0{
+            display: flex;
+        }
+        h2{
+            display: block;
+            width: 100%;
+        }
+        #kontener1{
+            background-color: green;
+            height: 300px;
+            width: 300px;
+            padding: 20px;
+            margin: 5px;
+        }
+        #kontener2{
+            background-image: url("foto/windows7.jpg");
+            height: 300px;
+            width: 300px;
+            padding: 20px;
+            margin: 5px;
+        }
+        p{
+            color: red;
+        }
+        @media (max-width: 900px) {
+            #kontener0{
+            display: block;
+        } 
+        #kontener1, #kontener2{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>Strona z demonstracją właściwości CSS3</h1>
+    <h2>Zadanie nr 12</h2>
+</header>
+<nav id="myLinks">
+    <a href="index.html">Home</a>
+    <a class="active" href="page2.html">Tło</a>
+    <a href="page3.html">HLSA</a>
+    <a href="page4.html">RGBA</a>
+    <a href="page5.html">HEX</a>
+    <a href="page6.html">OPACITY</a>
+    <a href="page7.html">POSITION</a>
+    <a href="page8.html">Z-INDEX</a>
+    <a href="page9.html">@IMPORT</a>
+</nav>
+<div class="button">
+    <button id="menu" onclick="myFunction()">&#9776;</button>
+</div>
+        <main>
+            <h2>Demonstarcja właściwości BACKGROUND</h2>
+            <div id="kontener0">
+                <div id="kontener1">
+                    <p>Kontener z zielonym tłem o wymiarch 300px na 300px</p>
+                </div>
+                <div id="kontener2">
+                    <p>Kontener z obrazem w tle o wymiarch 300px na 300px</p>
+                </div>
+            </div>
+        </main>
+<footer>
+    <h2>PL &copy; 2022</h2>
+</footer>
+<script>
+    function myFunction() {
+        document.getElementById("myLinks").style.display = "flex";
+        document.getElementById("menu").style.display = "none";
+    }
+</script>
+</body>
+</html>
