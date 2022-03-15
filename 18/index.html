@@ -77,24 +77,95 @@
                         <button id="3">3</button>
                         <p id="wynikBtn"></p>
 
+                        <h3>Rozwiązanie ćwiczenienia 8</h3>
+                        <script>
+                            function funkcja8() {
+                                let wynik = document.getElementById('wynik8');
+                                let kodHTML = '';
+                                for (let i = 1; i<= 1000; i++)
+                                {
+                                    kodHTML += + Math.floor(Math.random() * 100) + ', ';
+                                }     
+                                wynik.innerHTML = kodHTML;
+                                document.getElementById('b8').style.display = 'none';   
+                            }
+                        </script>
+                        <button id="b8" onclick="funkcja8()">Kliknij mnie!</button>
+                        <p id="wynik8"></p>
                         <hr>
-                        <h3>Ćwiczenie 8</h3>
-                        <p>Napisz kod, który wyświetli  1000 przypadkowych liczb całkowitych rozdzielonych przecinkami. Wynik należy zagnieździć w znaczniku P. Liczby mają zawierać się w zakresie od 0 do 100.</p>
-                        <button id="liczba8" ></button>
-                        <p id="liczby1000"></p>
-                       
+                        <h3>Rozwiązanie ćwiczenienia 9</h3>
+                        <script>
+                            function funkcja9() {
+                                document.getElementById('wynik9').style.backgroundColor = 'red';
+                            }
+                        </script>
+                        <button id="b9" onclick="funkcja9()">Kliknij mnie!</button>
+                        <div id="wynik9" style="width: 150px; height: 150px; background-color: black;"></div>
                         <hr>
-                        <h3>Ćwiczenie 9</h3>
-                        <p>Napisz skrypt, który będzie powodował, że naciśnięcie przycisku będzie zmieniało kolor tła na czerwony w czarnym elemencie DIV. Po wykonaniu kodu JS ukryj przycisk BUTTON.</p>
-                        <hr>
-                        <h3>Ćwiczenie 10</h3>
-                        <p>Wstaw 3 suwaki odpowiedzialne za 3 składowe koloru, zmiana położenia ma zmieniać daną składową. Wyświetlane mają być aktualnie wartości R, G i B. Wartości początkowe - 255 - kolor biały.</p>
+                        <h3>Rozwiązanie ćwiczenienia 10</h3>
+                        <script>
+                            window.onload = function (){
+                                let body = document.getElementById('wynik10');
+                                let wynik_r = document.getElementById('liczba_r');
+                                let wynik_g = document.getElementById('liczba_g');
+                                let wynik_b = document.getElementById('liczba_b');
+                                
+                                let r = document.querySelector('#r');
+                                let g = document.querySelector('#g');
+                                let b = document.querySelector('#b');
+                                
+                                let red = 0; 
+                                let green = 0;
+                                let blue = 0;
+
+                                r.addEventListener("input", function(){
+                                    red = r.value; 
+                                    green = g.value; 
+                                    blue = b.value;
+                                    wynik_r.innerHTML = red;
+                                    wynik_g.innerHTML = green;
+                                    wynik_b.innerHTML = blue;
+                                    body.style.backgroundColor='rgb('+red+','+green+','+blue+')';
+                                });
+                                g.addEventListener("input", function(){
+                                    red = r.value; 
+                                    green = g.value; 
+                                    blue = b.value;
+                                    wynik_r.innerHTML = red;
+                                    wynik_g.innerHTML = green;
+                                    wynik_b.innerHTML = blue;
+                                    body.style.backgroundColor='rgb('+red+','+green+','+blue+')';
+                                });
+                                b.addEventListener("input", function(){
+                                    red = r.value; 
+                                    green = g.value; 
+                                    blue = b.value;
+                                    wynik_r.innerHTML = red;
+                                    wynik_g.innerHTML = green;
+                                    wynik_b.innerHTML = blue;
+                                    body.style.backgroundColor='rgb('+red+','+green+','+blue+')';
+                                });
+                            }
+                        </script>
+                        <span>R: </span><span id="liczba_r">255</span><br>
+                        <span>G: </span><span id="liczba_g">255</span><br>
+                        <span>B: </span><span id="liczba_b">255</span><br>
+                        <br>
+                        R:<input type="range" value="255"  min="0" max="255" id="r">
+                        <br>
+                        <br>
+                        G:<input type="range" value="255"  min="0" max="255" id="g">
+                        <br>
+                        <br>
+                        B:<input type="range" value="255"  min="0" max="255" id="b">
+                        <div id="wynik10" style="width: 150px; height: 150px; border: 1px solid black;"></div>
                         <hr>
                 </section>
             </main>
         <footer>
             <h2>Stopka &copy; 2022</h2>
         </footer>
+    
         <script src="script.js"></script>
     
     </body>
