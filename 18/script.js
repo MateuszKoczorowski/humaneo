@@ -142,4 +142,16 @@ let wynikbtn1 = document.getElementById("wynikBtn")
     btn2.addEventListener('click', click2)
     btn3.addEventListener('click', click3)
 
-
+/** zadanie 8 */
+const btnliczba8 = document.getElementById('liczba8')
+function wyniklosowania() {
+    let wynik = document.getElementById('liczby1000');
+    let liczba10 = '';
+    for (let i = 1; i<= 1000; i++)
+    {
+        liczba10 += + Math.floor(Math.random() * 100) + '; ';
+    }     
+    wynik.innerHTML = liczba10;
+      
+}
+ btnliczba8.addEventListener('clik',wyniklosowania)
